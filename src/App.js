@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const colours = ["lightblue", "lightgrey", "orange", "silver", "lightgreen", "hotpink"];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="grid-container">
+        {colours.map((colour, idx) => (
+          <div key={colour[idx]} className="card">
+            <div className="thumbnail" style={{ background: colour }}></div>
+            <div className="text">
+              <div className="title">I am a card Title</div>
+              <div className="subheader">I am some random smaller text talking about the image!</div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
