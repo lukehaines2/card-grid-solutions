@@ -1,5 +1,5 @@
 .App {
-  padding: 50px;
+  padding: 40px 45px;
 }
 
 .grid-container {
@@ -11,14 +11,15 @@
 }
 
 .card {
-  border: 1px solid red;
-  border-radius: 15px;
+  border-radius: 4px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 2, 0.3);
+  box-sizing: border-box;
 }
 
 .thumbnail {
   height: 150px;
   background: lightblue;
-  border-radius: 15px 15px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 .text {
