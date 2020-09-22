@@ -20,10 +20,13 @@ const gridCreator = () => {
 function App() {
   return (
     <div className="App">
+      <h1>Grid solution</h1>
       <div className="grid-container">
         {gridCreator()}
       </div>
       <div className="spacer"></div>
+      <h1>Flexbox solution</h1>
+      <h4>(intended behaviour "impossible" so compromise required)</h4>
       <div className="flex-container">
         {gridCreator()}
         <div className="blank"></div>
