@@ -18,7 +18,6 @@
 
 .thumbnail {
   height: 150px;
-  background: lightblue;
   border-radius: 4px 4px 0 0;
 }
 
@@ -30,4 +29,25 @@
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 5px;
+}
+
+.flex-container {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-container .card {
+  width: clamp(250px, 22vw, 325px);
+  margin-bottom: 24px;
+}
+
+.blank {
+  flex-basis: 49%;
+}
+
+.spacer {
+  padding-top: 100px;
 }
