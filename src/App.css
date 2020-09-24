@@ -1,5 +1,5 @@
 .App {
-  padding: 40px 45px;
+  padding: 20px 45px;
 }
 
 .grid-container {
@@ -35,6 +35,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 12px;
 }
 
 .flex-container .card {
@@ -48,4 +49,10 @@
 
 .spacer {
   padding-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container .card {
+    width: clamp(250px, 70vw, 650px);
+  }
 }
