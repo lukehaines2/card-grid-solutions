@@ -35,7 +35,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 12px;
+  padding-top: 1em;
 }
 
 .flex-container .card {
@@ -51,8 +51,14 @@
   padding-top: 100px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .flex-container .card {
-    width: clamp(250px, 70vw, 650px);
+    width: clamp(250px, 100%, 90vw);
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .flex-container .card {
+    width: clamp(250px, 42vw, 90vw);
   }
 }
